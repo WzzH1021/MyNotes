@@ -1,0 +1,6 @@
+-- 查看字符集
+SHOW FULL COLUMNS FROM t_codept_interface;
+-- 修改字段字符集
+alter table t_codept_interface convert to character set utf8;
+-- 改表字符集
+ALTER TABLE t_codept_interface DEFAULT CHARACTER SET gbk COLLATE gbk_chinese_ci;
